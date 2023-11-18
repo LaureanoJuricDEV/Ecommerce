@@ -1,0 +1,150 @@
+
+.containerCarrusel{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.containerCarrusel div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+}
+.containerTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff; 
+    height: 15vh;
+    width: 100%;
+   
+}
+.containerImgCarrusel, .containerImgCarrusel2, .containerImgCarrusel3, .containerImgCarrusel4{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerImgCarrusel{
+    background-image: url("./Imagenes/Background_Carrusel_1.png");
+}
+.containerImgCarrusel2{
+    background-image: url("./Imagenes/Background_Carrusel_2.png");    
+}
+
+.containerImgCarrusel3{
+    background-image: url("./Imagenes/Background_Carrusel_3.png");    
+}
+
+.containerImgCarrusel4{
+    background-image: url("./Imagenes/Background_Carrusel_4.png");    
+}
+
+.containerCarts{
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCartsProducts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.containerCarts {
+    background-color: rgb(231, 231, 231);
+    margin: 5% 5%;
+    height: 50vh;
+    width: 20vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.containerCartsImagen{
+    width: 100%;
+    height: 70%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.containerCartsInfo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffff;
+    background: rgb(141,0,214);
+    background: linear-gradient(90deg, rgba(141,0,214,1) 0%, rgba(168,0,255,1) 100%);
+}
+.containerCartsInfo p{
+    margin-left: 5%;
+}
+.containerCartsButton{
+    width: 100%;
+    height: 9%;
+}
+.containerCartsButton button{
+    color: #ffff;
+    background:black;
+    width: 100%;
+    border-radius: 0;
+    outline: 1px solid black;
+}
+.containerCartsButton button:hover {
+    color: rgb(141,0,214);
+    transition: all 1s ;
+    
+}
+
+.productContainer{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productDetailContainer{
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.productImagenContainer{
+    background-color: #ffff;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productInfoContainer{
+    color: #ffff;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.productInfoContainer button{
+    background-color: #000;
+    color: #fff;
+}
+.productInfoContainer button:hover{
+    background: rgb(141,0,214);
+    background: linear-gradient(90deg, rgba(141,0,214,1) 0%, rgba(168,0,255,1) 100%);
+}
