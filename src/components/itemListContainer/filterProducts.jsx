@@ -44,7 +44,7 @@ const FilterProducts =()=>{
     },[nombreCategoria])
 
     
-
+console.log();
 
     return(
         <>
@@ -53,10 +53,10 @@ const FilterProducts =()=>{
                return(
            
            <div key={index} className="containerCarts">                
-               <p className="containerCartsImagen">IMAGEN</p>
+               <img className="containerCartsImagen" src={products.image}></img>
                <div className="containerCartsInfo">
                   <p>{products.tittle}</p>
-                   <p> <del>${products.price}</del> ${products.price-10}</p>
+                   <p> <del>${products.price}</del> ${products.price-500}</p>
                </div>
                 <div className="containerCartsButton">
                    <Link to={`/products/${products.id}`}><button>Ver más</button></Link>

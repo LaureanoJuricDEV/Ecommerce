@@ -66,13 +66,13 @@ const ItemDetailContainer=()=>{
         <div className="productContainer">
             <div className="productDetailContainer">
                 <div className="productImagenContainer">
-                  <p></p>
+                  <img src={productsId.image}></img>
                  </div>
                  
                  <div className="productInfoContainer">
                   <h2>{productsId.tittle}</h2>
                   <p>{productsId.description}</p>         
-                  <p><del>${productsId.price}</del> ${productsId.price-10}</p>
+                  <p><del>${productsId.price}</del> ${productsId.price-500} <span>OFERTA</span></p>
                   <button onClick={crearOrdenDeCompra}>¡Añadir al carrito!</button>
                </div>
             </div>

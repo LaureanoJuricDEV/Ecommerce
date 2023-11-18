@@ -9,7 +9,7 @@ const CartWidget = () => {
 
     return (
         <div >
-            <Badge count={"5"}>
+            <Badge count={10}>
             <Link to={`cartDetailContainer`}><Avatar shape="square" size="large" icon={<ShoppingCartOutlined/>} className='colorNumberCart'/></Link>
             </Badge>
             

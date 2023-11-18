@@ -15,34 +15,38 @@ useEffect(()=>{
     getDocs(allProductsNew)
          .then(snapshot=>{
             setProductsNew(snapshot.docs.map(doc=>({id: doc.id, ...doc.data()})));
+            
         })
 
 },setProductsNew)
 
 
-
+const cantidadTotal=1
 
     return(
-     <>
+     <div className="containerCartAll">
+     <div className="cartDetailTitle">
+       <p>Articulo</p>
+       <p>Precio</p>
+       <p>Cantidad</p>
+     </div>
         {productsNew.map((products,index)=>{
-        const cantidadTotal=1
-        
+                
         
         
         
         return(
-
-            <div key={index}>
-                <p>------</p>
-                <p>TITULO:{productsNew[index].items[0].tittle}</p>
-                <p>PRECIO:{productsNew[index].items[0].price}</p>
-                <p>CANTIDAD: {cantidadTotal}</p>
+            <div key={index}className="cartDetailContainer" >
+                <p>{productsNew[index].items[0].tittle}</p>
+                <p>${productsNew[index].items[0].price}</p>
+                <p>x{cantidadTotal}</p>
             </div>
+        
         )
         
     })}
 
-     </>
+     </div>
      
      
     )
