@@ -1,8 +1,8 @@
 import { db } from "../../firebase/client"
-import {doc, getDoc, getDocs, query, where,addDoc,collection } from "firebase/firestore"
+import { getDocs, query,collection } from "firebase/firestore"
 import { useEffect, useState } from "react"
 import './styleCart.css'
-
+import FormUser from "./formUser"
 const CartDetailContainer=()=>{
 
 const [productsNew, setProductsNew]= useState([])
@@ -20,7 +20,6 @@ useEffect(()=>{
 
 },setProductsNew)
 
-
 const cantidadTotal=1
 
     return(
@@ -36,15 +35,17 @@ const cantidadTotal=1
         
         
         return(
+            <>
             <div key={index}className="cartDetailContainer" >
                 <p>{productsNew[index].items[0].tittle}</p>
                 <p>${productsNew[index].items[0].price}</p>
                 <p>x{cantidadTotal}</p>
             </div>
-        
+        </>
+
         )
-        
     })}
+        <FormUser/>    
 
      </div>
      

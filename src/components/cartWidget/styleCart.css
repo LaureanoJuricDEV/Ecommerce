@@ -33,3 +33,62 @@
     align-items: center;
     justify-content: center;
 }
+
+.cartFinallyContainer{
+    background-color: red;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+.container{
+    display: none;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin-top: 5vh;
+    color: #fff;
+}
+.container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    border-radius: 15px;
+    background: rgb(141,0,214);
+    background: linear-gradient(180deg, rgba(141,0,214,1) 0%, rgba(168,0,255,1) 100%);   
+}
+.container form input::placeholder{
+    color: #fff;
+}
+.container form input {
+    margin: 4%;
+    height: 10vh;
+    width: 30vw;
+    font-size: 1rem;
+    padding: 0 2%;
+    background: none;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;;
+}
+.container form input:focus{
+    
+    outline: none;
+}
+
+.buttonForm{
+    background-color: #0e0e0e !important;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.3rem !important;
+    
+}
+.container.container.display{
+    display: flex;
+    width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

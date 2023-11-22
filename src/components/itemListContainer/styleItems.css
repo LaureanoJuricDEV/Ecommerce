@@ -153,6 +153,30 @@
     background: rgb(141,0,214);
     background: linear-gradient(90deg, rgba(141,0,214,1) 0%, rgba(168,0,255,1) 100%);
 }
-span{
+.productInfoContainer span{
     color: green;
+}
+
+.productInfoButton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonAdd{
+    margin: 0 5%;
+}
+
+.buttonCounterContainer{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.buttonCounter{
+    background-color: #fff;
+    color: #000;
+    width: 35%;
+    height: 100%;
+    font-size: 1.3rem;
 }

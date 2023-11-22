@@ -6,7 +6,7 @@ export const ShopContext = createContext();
 
 const ShopComponentContext = ({children})=>{
     
-    const [numero, setNumero]=useState([])
+    const [numero, setNumero]=useState(0)
 
     const suma =()=>{
       setNumero(numero+1)

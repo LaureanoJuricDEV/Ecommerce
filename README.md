@@ -1,8 +1,9 @@
-# React + Vite
+Página Web la cual emula un sitio e-commerce, desarrollada con React JS y Vite. Las carpetas del mismo se encuentran segmentadas respectiva de los componentes que la constituyen; 
+Se ha utilizado ANT DESIGN para agilizar el diseño de ciertos elementos utilizados
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El mismo esta orientado en una tienda ficticia con articulos de vestimenta orientados en lenguajes del desarrollo web. 
 
-Currently, two official plugins are available:
+Se ha utilzado comandos npm para la instalación de React, Vite y Ant Design. 
+A la hora de realizar la base de datos consta de una base noSQL como es FIRESTORE en donde se almacenan los productos y el carrito de compras creado por el usuario.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Los datos enviados por el usuario una vez concluida la compra se almacenan en el Local Storage.
