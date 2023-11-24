@@ -7,3 +7,4 @@ Se ha utilzado comandos npm para la instalación de React, Vite y Ant Design.
 A la hora de realizar la base de datos consta de una base noSQL como es FIRESTORE en donde se almacenan los productos y el carrito de compras creado por el usuario.
 
 Los datos enviados por el usuario una vez concluida la compra se almacenan en el Local Storage.
+El repositorio del mismo se encuentra alojado en Github mediante comandos de Git, el cual se va actualizando mediantes Push a medida que se va avanzando.

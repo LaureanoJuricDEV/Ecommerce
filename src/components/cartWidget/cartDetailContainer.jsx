@@ -20,8 +20,6 @@ useEffect(()=>{
 
 },setProductsNew)
 
-const cantidadTotal=1
-
     return(
      <div className="containerCartAll">
      <div className="cartDetailTitle">
@@ -29,24 +27,25 @@ const cantidadTotal=1
        <p>Precio</p>
        <p>Cantidad</p>
      </div>
+     
         {productsNew.map((products,index)=>{
                 
         
-        
-        
-        return(
-            <>
+            
+            return(
+                <>
             <div key={index}className="cartDetailContainer" >
                 <p>{productsNew[index].items[0].tittle}</p>
                 <p>${productsNew[index].items[0].price}</p>
-                <p>x{cantidadTotal}</p>
+                <p>{productsNew[index].items[0].cantidad}</p>
+                <p>${productsNew.map(x=>x.items[0].cantidad * x.items[0].price)[index]}</p>
             </div>
+
         </>
-
-        )
-    })}
+)
+})}            
+        
         <FormUser/>    
-
      </div>
      
      

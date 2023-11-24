@@ -3,7 +3,6 @@ import { createContext, useState } from "react";
 
 export const ShopContext = createContext();
 
-
 const ShopComponentContext = ({children})=>{
     
     const [numero, setNumero]=useState(0)

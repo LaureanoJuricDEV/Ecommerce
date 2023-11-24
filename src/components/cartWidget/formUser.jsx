@@ -23,15 +23,12 @@ const FormUser=()=>{
             form.current.reset();
     }
 
-
-
-        
-
+    
 
     return(
 
         <>
-        <div>
+        <div className='containerButtonFinally'>
             <button onClick={ClassName}>Finalizar compra</button>
         </div>
         

@@ -9,11 +9,9 @@ import CartDetailContainer from "./components/cartWidget/cartDetailContainer"
 
 
 function App() {
-
-
   return (
     <>
-    <ShopComponentContext>
+<ShopComponentContext>   
      <BrowserRouter> 
        <NavBar/>
         <Routes>
@@ -24,8 +22,8 @@ function App() {
           <Route exact path="*" element={<NotFound/>}/>
         </Routes>  
           <Footer/>
-    </BrowserRouter>
-    </ShopComponentContext> 
+     </BrowserRouter>
+  </ShopComponentContext>
     </>
   )
 }

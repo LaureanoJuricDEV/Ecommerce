@@ -1,15 +1,16 @@
 import { db } from "../../firebase/client"
-import {doc, getDoc, getDocs, query, addDoc,collection, updateDoc } from "firebase/firestore"
-import { useEffect, useState } from "react"
+import {doc, getDoc, getDocs, query, addDoc,collection, updateDoc,where } from "firebase/firestore"
+import { createContext, useEffect, useState,useContext } from "react"
 import { useParams } from "react-router-dom"
 import './styleItems.css'
 import ButtonCarts from "./buttonCarts"
-
+import { ShopContext } from "../cartContext/cartContext";
 
 
 
 const ItemDetailContainer=()=>{
 
+    const {numero, setNumero}= useContext(ShopContext)
     const [productsId, setProductsId]=useState([])
     const {productId}= useParams()
 
@@ -48,33 +49,27 @@ const ItemDetailContainer=()=>{
                 price:(productsId.price),
                 stock:(productsId.stock),
                 tittle:(productsId.tittle),
+                cantidad:numero
             }
             ]
      }
     
-     useEffect(()=>{
-         
-              
+     useEffect(()=>{    
+        
         const orderFinally = query(
-            collection(db,"order")
+            collection(db,"order"),
         )
-    
+
+
         getDocs(orderFinally)
              .then(snapshot=>{
                 setOrders(snapshot.docs.map(doc=>({id: doc.id, ...doc.data()})));
                 
-            })
-                    
+        })
+                
         
     
        },[setOrders])
-
-       
-
-       
-
-
-       
 
        const crearOrdenDeCompra=()=>{
 

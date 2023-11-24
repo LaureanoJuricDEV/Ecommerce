@@ -21,8 +21,7 @@ const FilterProducts =()=>{
 
         const productsFilter = query(
             collection(db,"products"),
-               where ("categoryId", "==", `${nombreCategoria}`)
-               
+            where ("categoryId", "==", `${nombreCategoria}`)   
         )
            
         
